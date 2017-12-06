@@ -1,1 +1,9 @@
 language:node_js
+addons:
+  sonarcloud:
+    organization: "KarthigaaM6" # the key of the org you chose at step #3
+    token:
+      secure: karthigaam6-github # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
